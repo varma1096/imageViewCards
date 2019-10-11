@@ -1,0 +1,62 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body> -->
+  <!--
+<div class="container">
+    <h2 class="card-title text-center text-white py-3">Medications</h2>
+      <div class="row">
+
+        <div class="col-sm-4" *ngFor="let med of meds" >
+          <div class="card bg-dark my-5">
+        <div class="card-body">
+
+     
+                    <p>{{ med.medid }}</p>
+                    <p>{{ med.description }}</p>
+                  </div>
+                  
+\        
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    -->
+
+  <div class="container">
+    <h2 style="align-content: flex-start;color:green;background-color: lightgrey">FamilyView</h2>
+    
+    <div class="row">
+
+      <div class="col-sm-6" *ngFor="let med of meds;let ar of arr2" style="display: inline-block" >
+          <div class="card-deck">
+
+
+        <div class="card text-white bg-info mb-3"  >
+          <div class="card-header">{{ med.userid }}</div>
+           <div class="card-body">
+
+            <p class="card-text">{{ med.weight }}</p>
+            <p class="card-text">{{ med.height }}</p>
+            <p class="card-text">{{ med.age }}</p>
+           <!-- <img src="data:image/jpg;base64, +{{med.image}}" width="50%"/>  -->
+           <!--<img [src]='med.image' width="100%">-->
+           <img [src]="image"/>
+
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
